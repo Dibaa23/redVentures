@@ -1,0 +1,18 @@
+{
+  "name": "business-insights-dashboard",
+  "version": "1.0.0",
+  "description": "Business Insights Dashboard with React frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "build": "cd dashboard && npm run build",
+    "install-deps": "cd server && npm install && cd ../dashboard && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd dashboard && npm start\""
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
